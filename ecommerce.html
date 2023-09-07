@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .heading{
+            color:rgb(81, 183, 230);
+            font-size:2cm;
+            text-align: center;
+            -webkit-text-stroke-width: 0.4px;
+            -webkit-text-stroke-color: black;
+        }
+        .topnav {
+        background-color: #333;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: .5fr .5fr .5fr .5fr .6fr .5fr .5fr;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav i{
+    float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.logo i{
+    float: left;
+  color: #080808;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #585656;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f0ed30;
+  color: white;
+  color: black;
+}
+.kart{
+    color:rgb(239, 241, 80);
+}
+.tom{
+    margin-top:10px;
+}
+.fullimg{
+    max-height: 80%;
+    max-width: 80%;
+}
+.container{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: .4cm;
+    background-color: #b4b2b2;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.subcon2{
+    border:solid rgb(7, 8, 8) 3px;
+    height: 300px;
+    width: 59%;
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.subcon2:hover {
+    opacity: 0.4;
+    transition: opacity 250s ease-in-out;
+    transform: scale(1.1);
+}
+.var1{
+    max-height: 150%;
+    max-width: 100%;
+}
+.rec{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container2{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1.8fr 1.7fr 1.3fr .2fr;
+    column-gap: 140px;
+    grid-area: auto;
+}
+.subs{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 100px);
+    font-size: 10px;
+}
+.subs2{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(3, 100px);
+    font-size: 10px;
+}
+.subcon3{
+    border:solid rgb(84, 88, 90) 3px;
+    height: 300px;
+    width: 125%;
+    text-align: center;
+}
+.subcon4{
+    border:solid rgb(79, 87, 90) 3px;
+    height: 300px;
+    width: 135%;
+    text-align: center;
+    display: inline;
+}
+.AC{
+    background-color:rgb(84, 176, 238);
+    padding:15px;
+    display: inline;
+}
+.hp{
+    background-color:rgb(241, 68, 68);
+    padding:20px;
+    display: inline;
+    max-width: 100%;
+    max-height: 100%;
+}
+.subcon5{
+    border:solid rgb(79, 87, 90) 3px;
+    height: 300px;
+    width: 180%;
+    text-align: center;
+    display: inline;
+}
+.logo{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 140px;
+    background-color: #f3f162;
+}
+.rj{
+    border-radius: 50%;
+}
+.container3{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1.2fr 1.2fr 1.2fr 1.2fr;
+    column-gap: .4cm;
+    grid-area: auto;
+    background-color: #858686;
+}
+.container4{
+    display: grid;
+    align-items: center;
+    grid-template-columns: .8fr 5fr 1fr 1fr;
+    column-gap: 0.2mm;
+}
+
+.subcon6{
+    border:solid rgb(84, 88, 90) 3px;
+    height: 10cm;
+    width: 70%;
+    text-align: left;
+    background-color: #929290;
+}
+.subb{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: repeat(2, 150px);
+    font-size: 10px;
+    height: 300px;
+    width: 16cm;
+    align-items: center;
+}
+.subb:first-child{
+    grid-row-end: 4;
+}
+.big{
+    height: 10cm;
+    width: 140%;
+    text-align: left;
+    background-color: #fffffe;
+    font-family: sans-serif;
+}
+body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Footer styles */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .fa {
+        font-size: 24px;
+    }
+    </style>
+    <head>
+        <div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/004/283/990/original/rj-logo-monogram-emblem-style-with-crown-shape-design-template-free-vector.jpg" height="100" width="150" class="rj">
+        <h1 class="heading">KINGRJ<span class="kart">Kart</span></h1>
+        <i class="fa fa-search">search</i>
+        </div>
+        <div class="topnav">
+            <a class="active" href="#home">ABOUT</a>
+            <a href="#about">TRENDING</a>
+            <a href="#about">MEN SHOPPING</a>
+            <a href="#about">KIDS SHOPPING</a>
+            <a href="#news">WOMEN SHOPPING</a>
+            <a href="#contact">LOW BUDGET</a>
+            <i class="fa fa-shopping-cart">-MY KART</i>
+          </div>
+    </head>
+    <body>
+        <h2 class="rec">Recent searchs:</h2>
+        <div class="container">
+            <div class="subcon2">
+           <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1687842433_3385347.jpg?format=webp&w=376&dpr=1.0" width="200"><br>
+           <h3>TOM tshirt</h3>
+           </div>
+           <div class="subcon2">
+           <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10187533/2019/9/26/dfda8898-827b-41de-9a9c-c86b061ae8141569490364357-WROGN-Men-Olive-Green--Black-Slim-Fit-Checked-Casual-Shirt-3-1.jpg" class="var1"><br>
+           <h3>Wrogn shirt</h3>
+           </div>
+           <div class="subcon2">
+            <img src="https://tiimg.tistatic.com/fp/1/007/433/stip-pattern-red-color-full-hand-t-shirt-with-front-pocket-for-daily-wear-875.jpg" class="var1"><br><br><br><br>
+            <h3>Fullhands T-shirt</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://m.media-amazon.com/images/I/51pVVSNnV4S._AC_UF1000,1000_QL80_.jpg" class="var1"><br><br><br><br><br><br>
+                <h3>OnePlus Charger</h3>
+            </div>
+        </div><br><br>
+        <hr>
+        <h2 class="rec">Trending Offers:</h2>
+        <div class="container2">
+            <div class="subcon3">
+                <h2>UPTO 70% OFF ON AC</h2><br>
+                <div class="subs">
+                    <img src="https://m.media-amazon.com/images/I/51RpzL6GSfL._AC_UY218_.jpg" class="AC" width="85" height="25">
+                    <img src="https://m.media-amazon.com/images/I/41uGfBsxMRL._AC_UY218_.jpg" class="AC" width="85" height="25">
+                    <img src="https://m.media-amazon.com/images/I/51sTXvsanQL._AC_UY218_.jpg" class="AC" width="85" height="25">
+                    <img src="https://m.media-amazon.com/images/I/51sTXvsanQL._AC_UY218_.jpg" class="AC" width="85" height="25">
+                    <img src="https://m.media-amazon.com/images/I/61nF5ekaaPL._AC_UY218_.jpg" class="AC" width="85" height="25">
+                    <img src="https://m.media-amazon.com/images/I/51JFb7FctDL._AC_UY218_.jpg" class="AC" width="85" height="25">
+                </div>
+            </div>
+            <div class="subcon4">
+                <h2>UPTO 30% OFF ON AUDIO</h2>
+            <div class="subs2">
+                <img src="https://m.media-amazon.com/images/I/71BJbii7jlL._AC_UY218_.jpg" class="hp" width="85" height="35">
+                <img src="https://m.media-amazon.com/images/I/61-Prg2LtCL._AC_UY218_.jpg" class="hp" width="85" height="35">
+                <img src="https://m.media-amazon.com/images/I/51oMWaW7tKL._AC_UY218_.jpg" class="hp" width="85" height="38">
+                <img src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Rechargeable-Powerful-Bluetooth-Speaker-with-FM-1.jpg" class="hp" width="85" height="38">
+                <img src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Bluetooth-Earpods-With-Protable-Power-Bank-1.jpg" class="hp" width="85" height="38">
+                <img src="https://5.imimg.com/data5/YP/AE/CL/SELLER-76545867/amazon-echo-dot-3rd-gen-alexa.jpg" class="hp" width="85" height="35">
+            </div>
+            </div>
+            <div class="subcon5">
+              <h2>UPTO 50% OFF ON TV</h2>
+              <div class="subs2">
+                <img src="https://5.imimg.com/data5/FM/HI/DG/SELLER-65327020/propre-led-tv.jpg" class="hp" width="85" height="35">
+                <img src="https://5.imimg.com/data5/RZ/MW/XO/SELLER-72090224/40-inch-crown-smart-led-tv.jpg" class="hp" width="85" height="35">
+                <img src="https://www.lg.com/in/images/tvs/md07554744/gallery/55UQ7550PSF-DZ-01.jpg" class="hp" width="85" height="38">
+                <img src="https://i.gadgets360cdn.com/products/televisions/large/1548155222_832_samsung_46-inch-led-full-hd-tv-ua46es5600r.jpg?downsize=*:360" class="hp" width="85" height="38">
+                <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1667229653/Croma%20Assets/Entertainment/Television/Images/256026_0_n4vkka.png?tr=w-600" class="hp" width="85" height="40">
+                <img src="https://www.91-img.com/pictures/television/aiwa/aiwa-magnifiq-a32hdx1-156965-large-1.jpg" class="hp" width="85" height="35">
+            </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h2 class="rec">BEST SELLERS:</h2>
+        <div class="container3">
+        <div class="subcon2">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1687842433_3385347.jpg?format=webp&w=376&dpr=1.0" width="220" height="300"><br>
+            <h3>TOM tshirt</h3>
+        </div>
+        <div class="subcon2">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmN0aGdycWE3bWNpcjBubHhrc2NpeGJxMTZ3ZzVuMG51bnVydGxsZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/PhOoWPBNj3fcw9dEiT/source.gif" width="235" height="300"><br>
+            <h3>SKYBAG</h3>
+        </div>
+        <div class="subcon2">
+            <img src="data:image/jpeg;base64,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" width="235" height="300"><br>
+            <h3>VIVO V11</h3>
+        </div>
+        <div class="subcon2">
+            <img src="https://design-milk.com/images/2022/07/Nothing-Phone-1-4.gif" width="235" height="300"><br>
+            <h3>NOTHING PHONE</h3>
+        </div>
+        </div>
+        <br><br><br><br>
+        <hr>
+        <h2 class="rec">BEST SELLERS IN SMARTWATCHES:</h2>
+        <div class="container3">
+            <div class="subcon2">
+                <img src="https://cdn.shopify.com/s/files/1/0137/0292/2286/files/Epic-01.gif?v=1660284273" width="220" height="300"><br>
+                <h3>FIREBOLT</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://cdn.shopify.com/s/files/1/0137/0292/2286/files/2-display_297f7635-4b18-4723-9763-c14b8ce323c4.gif?v=1668220880" width="235" height="300"><br>
+                <h3>FIREBOLT NINJA 3</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://media.glamour.com/photos/57b6291b24aa67f32114fb31/1:1/w_354%2Cc_limit/WATCH.gif" width="235" height="300"><br>
+                <h3>APPLE 2.0</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://www.jiomart.com/images/product/original/492849706/fire-bolt-call-smart-watch-with-bluetooth-calling-ip67-water-resistant-white-grey-digital-o492849706-p591225865-1-202204292311.jpeg?im=Resize=(480,480)" width="235" height="300"><br>
+                <h3>FIREBOLT CALLING</h3>
+            </div>
+            </div>
+            <br><br><br><br>
+            <hr>
+            <div class="container4">
+                <div class="subcon6">
+                    <h2 class="rec"><center>BEST IN SPORTS:</center></h2><br>
+                    <div class="subb">
+                  <img src="https://rukminim2.flixcart.com/image/850/1000/jf751u80/bat/g/g/u/1-1-2-short-handle-virat-kohli-grand-edition-tennis-cricket-bat-original-imaf3j2zhmdnays3.jpeg?q=20" width="115" height="120" class="spo">
+                  <img src="https://m.media-amazon.com/images/I/61HxbE8n9DL._AC_UY1000_.jpg" width="115" height="120" class="spo">
+                  <img src="https://rukminim2.flixcart.com/image/612/612/jybvafk0/racquet/y/s/5/g3-8-89-cm-r501-strung-1-ad-br-6-2-90-badminton-racquet-adrenex-original-imafghzpz4pxmtwv.jpeg?q=70" width="115" height="120" class="spo">
+                  <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/skate/b/p/z/6-9-skating-shoe-have-different-size-and-1-wheel-in-line-skates-original-imagknaddadkqhdb.jpeg?q=70" width="115" height="120" class="spo">
+                  <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ball/s/n/5/400-country-colour-argentina-5-22-1-fb-1360-ar-football-nivia-original-imagmekbksfvb6pk.jpeg?q=70" width="115" height="120" class="spo">
+                  <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bat/p/g/w/400-junior-cricket-bat-size-3-for-age-group-8-years-3-junior-3-original-imagp8ugqssdmruc.jpeg?q=70" width="115" height="120" class="spo">
+                  </div>
+                </div>
+                <div class="big">
+                   <h2 class="rec">BRAND NEW</h2>
+                    <img src="https://media.tenor.com/hnxmg7ul1cEAAAAd/apple-apple-iphone.gif" height="307" width="664"><br>
+                    <h3><center>IPHONE 14 PRO</center></h3>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <hr>
+            <h2 class="rec">BEST IN SMARTPHONES:</h2>
+        <div class="container3">
+            <div class="subcon2">
+                <img src="https://i.gadgets360cdn.com/products/large/iq-623x800-1662990302.jpg" width="220" height="300"><br>
+                <h3>IQOO Z6</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://www.91-img.com/pictures/150255-v4-vivo-t2-mobile-phone-large-4.jpg" width="235" height="300"><br>
+                <h3>VIVO T2</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://media.tenor.com/M8NdEgdb2_IAAAAC/oneplus-oneplus8pro.gif" width="235" height="296"><br>
+                <h3>ONEPLUS</h3>
+            </div>
+            <div class="subcon2">
+                <img src="https://static.c.realme.com/IN/thread/1432296583822692352.gif" width="235" height="300"><br>
+                <h3>FIREBOLT CALLING</h3>
+            </div>
+            </div>
+    </body>
+    <br><br><br><br><br>
+        <hr>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/004/283/990/original/rj-logo-monogram-emblem-style-with-crown-shape-design-template-free-vector.jpg" alt="KingRJKart Logo">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect with us:</h4>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 KingRJKart. All rights reserved.</p>
+        </div>
+    </footer>
+</html>
